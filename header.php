@@ -28,7 +28,13 @@
               </button>
         </div>
             <a class="logo" href="index.html">
-                <img class="logo-img" src="<?php bloginfo('template_url'); ?>/theme-template/img/logo-bridal-photography.png" alt="Bridal Photography">
+                <?php
+                if(function_exists('the_custom_logo')){
+                   $custom_logo_id =get_theme_mod('custom_logo');
+                   $logo = wp_get_attachment_image_src($custom_logo_id);
+                }
+                ?>
+                <img class="logo-img" src="<?php echo $logo[0] ?>" alt="Bridal Photography">
             </a>
             <img class="share" src="<?php bloginfo('template_url'); ?>/theme-template/img/share.png" alt="share">
         </div>
