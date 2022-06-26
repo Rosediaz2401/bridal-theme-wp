@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter&family=Lato&family=Montserrat&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <?php wp_head(); ?>
+    <?php 
+    wp_head(); 
+    ?>
+
 </head>
 <body>
     <header class="header">
@@ -31,16 +35,17 @@
             <div class="menu-container panel">
                 <div class="menu-section">
                     <nav class="main-menu menu">
-                        <ul class="navigation">
-                        <li class="menu-item"><a href="#about-section">ABOUT</a></li>
-                        <li class="menu-item"><a href="portafolio.html">PORTAFOLIO</a></li>
-                        <li class="menu-item"><a href="packages.html">PACKAGES</a></li>
-                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
-                        <li class="menu-item"><a href="book.html">BOOK NOW</a></li>
-                        <li class="menu-item"><a href="offer.html">OFFER</a></li>
-                        <li class="menu-item"><a href="blog.html">BLOG</a></li>
-                        <li class="menu-item"><a href="faq.html">FAQ</a></li>
-                        </ul>
+
+                     <?php 
+                        wp_nav_menu(
+                            array(
+                                'menu' => 'primary',
+                                'container' => '',
+                                'theme-_location' => 'primary',
+                                'items_wrap' => '<ul id="" class="navigation">%3$s</ul>'
+                            )
+                        );
+                     ?>   
                     </nav>
                     <div class="social-wrap">
                         <a href="https://www.facebook.com/BridalPhotographyPV" target="_blank" rel="noopener noreferrer"><img class="media-icons share-icons" src="<?php bloginfo('template_url'); ?>/theme-template/img/simbolo-de-la-aplicacion-de-facebook.png" alt="share"></a>

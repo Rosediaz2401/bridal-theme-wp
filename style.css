@@ -119,6 +119,7 @@ body{
 li a{
     text-decoration: none;
     color: var(--c-dark);
+    text-transform: uppercase;
 }
 .menu-item{
     list-style: none;
@@ -499,7 +500,7 @@ p{
     line-height: 1.5;
     font-weight: normal;
     margin-bottom: 0px;
-    background-image: url('./img/plus-black-symbol_icon-icons.com_73453.png');
+    background-image: url('./theme-template/img/plus-black-symbol_icon-icons.com_73453.png');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 10px;
@@ -524,7 +525,7 @@ p{
     display: block;
 }
 .more-info.my-active .faq-text{
-    background-image: url('./img/less_3158.png');
+    background-image: url('./theme-template/img/less_3158.png');
 }
 .calendar{
     border: 1px solid black;

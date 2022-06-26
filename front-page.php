@@ -1,6 +1,11 @@
+
+
+
+
 <?php
     get_header();
     ?>
+
     <main>
         <div class="img-container">
             <img  class="wed-img" src="<?php bloginfo('template_url'); ?>/theme-template/img/wedding-gallery18-1.jpg" alt="wedding couple">
