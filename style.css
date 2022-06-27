@@ -297,6 +297,7 @@ p{
     letter-spacing: 1.5px;
     font-weight: bold;
     text-align: left;
+    color: var(--c-dark);
 }
 .contact-input{
     width: 100%;
