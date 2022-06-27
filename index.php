@@ -11,11 +11,30 @@
  *
  * @var bool
  */
-define( 'WP_USE_THEMES', true );
+// define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
+// require __DIR__ . '/wp-blog-header.php';
 
 ?>
 
+<?php
 
+get_header();
+get_header('secundario');
+?>
+
+<?php
+
+if(have_posts()){
+    while(have_posts()){
+        the_post();
+        get_template_part('template-parts/content','archive');
+    }
+}
+?>
+
+<?php
+get_footer('secundario');
+
+?>

@@ -27,7 +27,7 @@
                 </span>
               </button>
         </div>
-            <a class="logo" href="index.html">
+            <a class="logo" href="<?php the_permalink(29); ?>">
                 <?php
                 if(function_exists('the_custom_logo')){
                    $custom_logo_id =get_theme_mod('custom_logo');

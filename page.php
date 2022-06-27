@@ -471,57 +471,6 @@
         </div>
 <?php endif; ?>
 
-<?php if (is_page('52') ):?>
-    <div class="main-container testimonial-main-container">
-            <div class="contact-section">
-                <div class="package-container blog-container">
-                    <div class="blog-img">
-                        <img class="img-map img-blog-container" src="<?php bloginfo('template_url'); ?>/theme-template/img/viñetas-1.png" alt="vinetas">
-                    </div>
-                    <div class="blog-info">
-                        
-                        <h2 class="title photo-title booking-title">BLOG</h2>
-                        <p class="photo-text booking-text">This is the beginning of the end of your search. You can relax; you have arrived! Have look at our wedding photography and videography, captured in Puerto Vallarta and the Riviera Nayarit Bay area!
-                        </p>
-                    </div>
-                </div>  
-            </div>
-            <div class="info-container blog-container">
-                <div class="blog-section ">
-                    <a href="jessica.html">
-                        <div class="content-overlay-wrap">
-                            <div class="content-overlay"></div>
-                                <img class="img-photos package-photos book-img" src="<?php bloginfo('template_url'); ?>/theme-template/img/blog/wedding-gallery6-scaled.jpg" alt="wedding couple">
-                        </div>
-                        <h4 class="blog-names">Jessica and Evan</h4>
-                        <p class="photo-text booking-text blog-text">Jessica and Evan</p>
-                        <p class="date">August 4, 2020</p>
-                    </a>
-                </div>
-                <div class="blog-section">
-                    <a href="wedding.html">
-                        <div class="content-overlay-wrap">
-                            <div class="content-overlay"></div>
-                                <img class="img-photos package-photos book-img" src="<?php bloginfo('template_url'); ?>/theme-template/img/blog/beach-wedding-shanon-and-alex13.jpg" alt="wedding couple">
-                        </div>
-                            <h4 class="blog-names">WEDDING GALLERY</h4>
-                            <p class="photo-text booking-text blog-text">10 Steps to Finding a Great Wedding Photographer Unlike the work of your other wedding vendors (music, flower arrangements, cake), photographs aren’t things you can hear, smell, taste or even see at first—you don’t really know what you’re getting until after the fact. That means careful research and selectiveness regarding professional skills, artistic style and …</p>
-                            <p class="date">August 4, 2020</p>
-                    </a>
-                </div>
-                <div class="blog-section">
-                    <a href="shannon.html">
-                    <div class="content-overlay-wrap">
-                        <div class="content-overlay"></div>
-                            <img class="img-photos package-photos book-img" src="<?php bloginfo('template_url'); ?>/theme-template/img/blog/beach-wedding-shanon-and-alex4.jpg" alt="wedding couple">
-                    </div>
-                        <h4 class="blog-names">Beach Wedding Shanon and Alex</h4>
-                        <p class="date">January 3rd,2017</p>
-                        </a>
-                </div>
-            </div>
-        </div>
-<?php endif; ?>
 
 <?php
     get_footer();
